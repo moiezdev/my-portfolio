@@ -2,7 +2,8 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  ssr: false,
+  target: 'static',
   devtools: { enabled: true },
   runtimeConfig: {
     gmailUser: process.env.GMAIL_USER,
