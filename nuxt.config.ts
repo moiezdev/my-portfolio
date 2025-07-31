@@ -6,8 +6,8 @@ export default defineNuxtConfig({
   target: 'static',
   devtools: { enabled: true },
   runtimeConfig: {
-    gmailUser: process.env.GMAIL_USER,
-    gmailPass: process.env.GMAIL_PASS
+    gmailUser: process.env.NUXT_PUBLIC_GMAIL_USER,
+    gmailPass: process.env.NUXT_PUBLIC_GMAIL_PASS
   },
   css: ['~/assets/css/main.css'],
   app: {
