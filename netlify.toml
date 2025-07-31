@@ -1,6 +1,7 @@
+# netlify.toml
 [build]
-  command = "npm run generate"
-  publish = "dist"
+  command = "npx nuxi build"
+  publish = ".output/public"
 
 [functions]
-  directory = ".netlify/functions"
+  directory = ".output/server/functions"
