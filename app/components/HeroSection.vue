@@ -2,7 +2,7 @@
 
 </script>
 <template>
-<div class="flex gap-4 text-[14px] flex-col justify-center items-center w-[60%] mx-auto min-h-screen pb-15 @max-md:w-full @max-md:px-10 @max-md:items-baseline">
+<div class="flex gap-4 text-[14px] flex-col justify-center items-center w-[60%] mx-auto min-h-screen pb-15 @max-md:w-full @max-md:px-5 @max-md:items-baseline">
   <h1 class="text-[48px] font-bold dark:text-darkText text-text">Hi, <br class="hidden @max-md:block"> I am Moiz Ur Rehman</h1>
   <h3 class="text-[24px] font-bold text-darkCyan">Front - End Developer</h3>
   <p class="text-[20px] font-bold">Creating beautiful and functional web experiences with modern technologies.

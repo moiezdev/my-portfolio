@@ -4,7 +4,7 @@
 
 <template>
   <div class="py-[50px] @max-md:py-0 overflow-hidden w-full">
-    <div class="grid grid-cols-2 gap-x-4 px-26 h-full w-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-10">
+    <div class="grid grid-cols-2 gap-x-4 px-26 h-full w-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-5">
       <!--  right section-->
       <div class="p-[100px] relative @max-md:px-[0px] @max-md:py-10">
         <div class="relative w-full h-full">

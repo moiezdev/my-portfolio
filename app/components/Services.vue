@@ -1,8 +1,8 @@
 <template>
-  <div class="py-[40px] px-26">
+  <div class="py-[40px] px-26 @max-md:px-5">
     <SectionTitle title="Programming Languages & Technologies"
                   subtitle="Core Languages and technologies I use for full-stack development"/>
-    <div class="grid grid-cols-3 grid-rows-2 gap-4">
+    <div class="grid grid-cols-3 grid-rows-2 gap-4 @max-md:grid-cols-1">
       <!--      Front-end development Card-->
       <div class="col-span-1 row-span-2 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
         <div class="px-[22px] py-[25px] bg-darkCyan text-white">
@@ -58,7 +58,7 @@
         </div>
       </div>
       <!--      Development Philosophy-->
-      <div class="col-span-2 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden px-[22px] py-[25px] ">
+      <div class="col-span-2 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden px-[22px] py-[25px] @max-md:col-span-1">
 
         <div class="flex flex-col justify-between gap-[30px]">
           <div class="flex flex-col gap-[30px]">
@@ -66,7 +66,7 @@
             <p class="text-[12px] font-semibold">I believe in writing clean, maintainable code and staying current with industry best practices.
               <br>Always learning new technologies to deliver better solutions.</p>
           </div>
-          <div class="flex gap-4">
+          <div class="flex flex-wrap gap-4 @max-md:gap-1">
             <div class="py-[8px] px-[13px] dark:bg-[#374151] text-white bg-darkButton rounded-full">
               <p class="text-[12px] font-medium">Clean Code</p>
             </div>
