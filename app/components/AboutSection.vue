@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="py-[50px] @max-md:py-0 overflow-hidden">
-    <div class="grid grid-cols-2 gap-x-4 px-26 h-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-10">
+  <div class="py-[50px] @max-md:py-0 overflow-hidden w-full">
+    <div class="grid grid-cols-2 gap-x-4 px-26 h-full w-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-10">
       <!--  right section-->
       <div class="p-[100px] relative @max-md:px-[0px] @max-md:py-10">
         <div class="relative w-full h-full">
@@ -30,7 +30,7 @@
           contributing to open source projects, or sharing my knowledge through
           technical writing and mentoring fellow developers.</p>
         </div>
-        <div class="flex gap-4">
+        <div class="flex @max-md:flex-col gap-4">
           <div class="py-[18px] px-[11px] dark:bg-[#374151] text-white bg-darkButton rounded-xl">
             <p class="text-[22px] font-semibold text-darkCyan">25+</p>
             <p>Completed Projects</p>

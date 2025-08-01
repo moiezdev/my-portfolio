@@ -1,8 +1,8 @@
 <template class="">
   <div :class="currentTheme"
-       class="flex @container flex-col bg-[url(/app-background.png)] bg-size-[100%] justify-baseline bg-background min-h-screen max-w-[1680px] mx-auto font-display dark:bg-darkBackground dark:text-darkText overflow-x-hidden">
+       class="flex @container flex-col bg-[url(/app-background.png)] bg-size-[100%] justify-baseline bg-background min-h-screen max-w-[1680px] mx-auto font-display dark:bg-darkBackground dark:text-darkText">
     <Navbar :currentTheme="currentTheme" @changeTheme="changeTheme"/>
-    <div class="mx-auto">
+    <div class="mx-auto max-w-full">
       <NuxtPage/>
     </div>
     <Footer/>
