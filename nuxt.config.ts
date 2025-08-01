@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   ssr: true,
-  target: 'static',
   devtools: { enabled: true },
   runtimeConfig: {
     gmailUser: process.env.NUXT_PUBLIC_GMAIL_USER,
@@ -25,6 +24,6 @@ export default defineNuxtConfig({
     ],
   },
   nitro: {
-    preset: 'netlify'
+    preset: 'vercel'
   },
 })
