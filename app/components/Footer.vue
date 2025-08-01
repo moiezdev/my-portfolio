@@ -1,10 +1,11 @@
 <template>
-  <div class="py-[50px] px-26">
-    <SectionTitle title="Let’s Work Together" subtitle="Have a project in mind? I had love to hear about it and discuss how
+  <div class="py-[50px] ">
+  <SectionTitle title="Let’s Work Together" subtitle="Have a project in mind? I had love to hear about it and discuss how
 we can bring your ideas to life"/>
+  <div class="px-26 @max-md:px-5">
     <div class="grid grid-cols-11">
       <!--    right side-->
-      <div class="col-span-6">
+      <div class="col-span-6 @max-md:col-span-11 @max-md:mb-10">
         <h3 class="text-[22px] font-semibold mb-[50px]">Get In Touch</h3>
         <p class="text-[16px] font-semibold mb-[50px] xl:pr-26">I’m always interested in new opportunities and exciting
           projects. whether
@@ -32,7 +33,7 @@ we can bring your ideas to life"/>
       </div>
       <!--      left side-->
       <form @submit.prevent="sendMessage"
-            class="col-span-5 dark:bg-dark-5 bg-darkButton text-white rounded-3xl p-[50px]">
+            class="col-span-5 @max-md:col-span-11 dark:bg-dark-5 bg-darkButton text-white rounded-3xl p-[50px] @max-md:p-5">
         <div class="flex flex-col gap-[20px] mb-[30px]">
           <label for="name">Name*</label>
           <input required v-model="message.name" class="dark:bg-[#374151] bg-[#98A1AE] p-[15px] rounded-xl cursor-text"
@@ -71,6 +72,7 @@ we can bring your ideas to life"/>
         </div>
       </form>
     </div>
+  </div>
   </div>
 </template>
 

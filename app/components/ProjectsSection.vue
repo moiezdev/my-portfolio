@@ -2,7 +2,7 @@
   <div :class="type=='page'?'min-h-screen':''" class="py-[40px]">
     <SectionTitle v-if="type !== 'page'" title="Featured Projects" subtitle="Take a look at some of my recent work and creative solutions"/>
     <SectionTitle v-else title="My Projects" subtitle="Take a look at some of my recent work and solutions"/>
-    <div class="grid grid-cols-3 dark:bg-dark-5 bg-darkMuted py-[50px] px-50 gap-4">
+    <div class="grid grid-cols-3 @max-md:grid-cols-1 dark:bg-dark-5 bg-darkMuted py-[50px] px-50 @max-md:px-5 gap-4">
       <!--      projects card-->
       <div v-for="project in projects" class="dark:bg-darkBackground bg-darkButton col-span-1 rounded-3xl cursor-pointer overflow-hidden relative hover:z-10 hover:scale-105">
         <div class="relative">
@@ -23,7 +23,7 @@
         </div>
         <div class="px-[25px] py-[20px]">
           <h1 class="text-[26px] mb-[15px] text-white">{{project.name}}</h1>
-          <div class="flex justify-baseline gap-2">
+          <div class="flex flex-wrap justify-baseline gap-2">
             <div v-for="tag in project.tags" class="py-[3px] px-[5px] dark:bg-[#374151] not-dark:border-white border-transparent border-1 not-dark:text-white dark:text-darkCyan bg-darkButton rounded-full">
               <p class="text-[12px] font-medium">{{tag}}</p>
             </div>
