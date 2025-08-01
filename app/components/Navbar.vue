@@ -4,10 +4,15 @@
     <h1 class="text-[22px] font-semibold text-semi-bold tracking-tight">
       Moiz Dev
     </h1>
-    <div v-if="menuOpen" :class="!menuOpen?'@max-md:right-[-50px]':'@max-md:right-0'" class="z-20 flex gap-4 text-[14px] flex-wrap justify-around items-center @max-md:absolute @max-md:top-[100%] @max-md:flex-col @max-md:w-[250px] @max-md:gap-[1px] @max-md:bg-white">
-      <NuxtLink class="w-full @max-md:px-5 @max-md:py-5  @max-md:dark:bg-dark-5 @max-md:bg-dark-1" v-for="tab in tabs" :key="tab.name" :to="tab.href">{{ tab.name }}</NuxtLink>
+    <div :class="!menuOpen?'@max-md:hidden @max-md:right-[-50px]':'@max-md:right-0'"
+         class="z-20 flex gap-4 text-[14px] justify-around items-center @max-md:absolute @max-md:top-[100%] @max-md:flex-col @max-md:w-[250px] @max-md:gap-[1px] @max-md:bg-white">
+      <NuxtLink @click="()=>menuOpen = !menuOpen"
+                class="w-full @max-md:px-5 @max-md:py-5  @max-md:dark:bg-dark-5 @max-md:bg-dark-1" v-for="tab in tabs"
+                :key="tab.name" :to="tab.href">{{ tab.name }}
+      </NuxtLink>
     </div>
-    <span v-if="menuOpen" @click="()=>menuOpen = !menuOpen" class="fixed top-0 left-0 z-10 hidden @max-md:block w-screen h-screen bg-black opacity-30"></span>
+    <span v-if="menuOpen" @click="()=>menuOpen = !menuOpen"
+          class="fixed top-0 left-0 z-10 hidden @max-md:block w-screen h-screen bg-black opacity-30"></span>
     <div class="flex gap-2">
       <button
           class="p-2 rounded-md dark:bg-button bg-darkCyan hover:opacity-100 opacity-70 transition"
@@ -40,7 +45,9 @@
           class="p-2 rounded-md dark:bg-button bg-darkCyan hover:opacity-100 opacity-70 transition @min-md:hidden"
           @click="()=>menuOpen = !menuOpen"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#e3e3e3">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
       </button>
     </div>
   </header>
