@@ -4,4 +4,4 @@
   publish = ".output/public"
 
 [functions]
-  directory = ".output/server/functions"
+  directory = ".output/server/api"
