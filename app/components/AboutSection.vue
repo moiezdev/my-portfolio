@@ -3,10 +3,10 @@
 </script>
 
 <template>
-  <div class="py-[50px]">
-    <div class="grid grid-cols-2 gap-x-4 px-26 h-full dark:bg-dark-5 bg-darkMuted">
+  <div class="py-[50px] @max-md:py-0 overflow-hidden">
+    <div class="grid grid-cols-2 gap-x-4 px-26 h-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-10">
       <!--  right section-->
-      <div class="p-[100px] relative">
+      <div class="p-[100px] relative @max-md:px-[0px] @max-md:py-10">
         <div class="relative w-full h-full">
         <span class="dark:opacity-100 opacity-50 bg-[#203441] absolute w-[87px] aspect-square top-[-20px] right-[-80px] rounded-full"></span>
         <span class="dark:opacity-100 opacity-50 bg-[#203441] absolute w-[118px] aspect-square bottom-[-15px] left-[-85px] rounded-full"></span>
