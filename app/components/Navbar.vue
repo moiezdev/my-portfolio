@@ -1,5 +1,5 @@
 <template>
-  <header :class="isScrolled? 'dark:bg-darkBackground bg-background shadow-md @max-sm:py-1 @min-sm:py-4':'py-4'"
+  <header :class="isScrolled? 'dark:bg-darkBackground bg-background shadow-md @min-md:py-1 @max-md:py-4':'py-4'"
           class="fixed z-50 left-0 right-0 max-w-[1680px] mx-auto top-0 w-full flex items-center justify-between px-6">
     <h1 class="text-[22px] font-semibold text-semi-bold tracking-tight">
       Moiz Dev
