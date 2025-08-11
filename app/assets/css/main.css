@@ -24,6 +24,3 @@
     --color-card: #f3f4f6;
     --color-darkCard: #161b22;
 }
-html, * {
-    transition: all .5s ease;
-}

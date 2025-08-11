@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import {reactive, defineEmits} from "vue";
+import {reactive} from "vue";
 import {ref, onMounted, onUnmounted} from 'vue'
 
 const menuOpen = ref(false)

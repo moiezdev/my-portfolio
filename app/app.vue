@@ -6,6 +6,10 @@
       <NuxtPage/>
     </div>
     <Footer/>
+    <div
+        class="fixed top-0 left-0 w-4 h-4 dark:bg-white bg-black z-50 rounded-full pointer-events-none"
+        :style="{ transform: `translate3d(${x}px, ${y}px, 0)` }"
+    />
   </div>
 </template>
 <script setup lang="ts">
@@ -33,4 +37,16 @@ function changeTheme() {
     currentTheme.value = "dark"
   }
 }
+
+// cursor setup
+
+const x = ref(0)
+const y = ref(0)
+
+onMounted(() => {
+  window.addEventListener('mousemove', (e) => {
+    x.value = e.clientX - 10
+    y.value = e.clientY - 10
+  })
+})
 </script>

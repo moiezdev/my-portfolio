@@ -3,9 +3,13 @@
 
 <template>
   <div class="mt-[70px]"></div>
-  <AboutSection/>
+  <SectionBox>
+    <AboutSection/>
+  </SectionBox>
   <div class="border-b-[5px] dark:border-b-white border-b-darkBackground"></div>
-  <Services/>
+  <SectionBox>
+    <Services/>
+  </SectionBox>
   <div class="border-b-[5px] dark:border-b-white border-b-darkBackground"></div>
 </template>
 

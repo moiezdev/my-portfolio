@@ -4,7 +4,7 @@
     <SectionTitle v-else title="My Projects" subtitle="Take a look at some of my recent work and solutions"/>
     <div class="grid grid-cols-3 @max-md:grid-cols-1 dark:bg-dark-5 bg-darkMuted py-[50px] px-50 @max-md:px-5 gap-4">
       <!--      projects card-->
-      <div v-for="project in projects" class="dark:bg-darkBackground bg-darkButton col-span-1 rounded-3xl cursor-pointer overflow-hidden relative hover:z-10 hover:scale-105">
+      <div v-for="project in projects" class="dark:bg-darkBackground bg-darkButton col-span-1 rounded-3xl cursor-pointer overflow-hidden relative hover:z-10 hover:scale-105 transition-transform ease-in-out">
         <div class="relative">
           <a class="" :href="project.link" target="_blank">
             <img :src="`/${project.image}`" alt="">
@@ -41,9 +41,8 @@
 
 
 <script setup lang="ts">
-import { defineProps, reactive} from "vue";
-
-const props = defineProps(['type'])
+import {reactive} from "vue";
+defineProps(['type'])
 const projects = reactive([
   {
     image:'scmborba.png',

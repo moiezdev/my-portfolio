@@ -29,6 +29,9 @@ we can bring your ideas to life"/>
           <a target="_blank" href="https://www.instagram.com/dev.moiz">
             <img src="/insta.svg" alt="">
           </a>
+          <a target="_blank" href="https://www.instagram.com/dev.moiz">
+            <img src="/insta.svg" alt="">
+          </a>
         </div>
       </div>
       <!--      left side-->

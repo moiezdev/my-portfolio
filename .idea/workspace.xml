@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2076118c-25b2-47b5-864f-afc673d6d5d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/SectionBox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hero-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/hero-img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mask-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mask-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mask-img.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HeroSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeroSection.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ProjectsSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ProjectsSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/SectionTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SectionTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pages/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/pages/about.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +43,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/tailwind.config.ts" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -35,32 +54,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/apple/projects/my-portfolio/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm dev.executor": "Run",
-    "settings.editor.selected.configurable": "settings.vue",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apple/projects/my-portfolio/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.vue&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -69,6 +88,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
@@ -105,7 +125,13 @@
       <workItem from="1753864825930" duration="62197000" />
       <workItem from="1753983418354" duration="5789000" />
       <workItem from="1753990443884" duration="7907000" />
-      <workItem from="1753999516702" duration="37305000" />
+      <workItem from="1753999516702" duration="37961000" />
+      <workItem from="1754139972527" duration="6400000" />
+      <workItem from="1754339273512" duration="26114000" />
+      <workItem from="1754562949880" duration="19538000" />
+      <workItem from="1754602090473" duration="6988000" />
+      <workItem from="1754673486689" duration="1528000" />
+      <workItem from="1754735691427" duration="1350000" />
     </task>
     <servers />
   </component>
