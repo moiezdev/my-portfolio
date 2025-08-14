@@ -1,7 +1,0 @@
-# netlify.toml
-[build]
-  command = "npx nuxi build"
-  publish = ".output/public"
-
-[functions]
-  directory = ".output/server/api"
