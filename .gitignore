@@ -8,3 +8,5 @@ dist/
 # IDE files
 .vscode/
 .idea/
+.idea/workspace.xml
+/.idea
