@@ -1,17 +1,18 @@
 <template>
   <div class="py-[40px]">
     <SectionTitle title="Programming Languages & Technologies"
-                  subtitle="Core Languages and technologies I use for full-stack development"/>
+      subtitle="Core Languages and technologies I use for full-stack development" />
     <div class="px-26 @max-md:px-5">
       <div class="grid grid-cols-3 grid-rows-2 gap-4 @max-md:grid-cols-1">
         <!--      Front-end development Card-->
-        <div class="col-span-1 row-span-2 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
+        <motion.div :in-view="{ x: [-15, -7.5, 0], scale: [1.05, 1.025, 1], opacity: [0, 0.5, 1.0] }"
+          class="col-span-1 row-span-2 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
           <div class="px-[22px] py-[25px] bg-darkCyan text-white">
             <h2>Frontend Development</h2>
             <p>Creating Interactive and responsive user interfaces</p>
           </div>
           <div class="p-[35px] dark:bg-dark-5 bg-darkMuted flex flex-col gap-[30px]">
-            <div v-for="language in devLanguages" class="flex">
+            <div v-for="language in devLanguages" class="flex hover:scale-105 transition-transform">
               <div class="dark:bg-[#374151] text-white bg-darkButton rounded-xl py-[10px] px-[10px]">
                 <img class="w-[24] mt-1 aspect-square" :src="`/${language.icon}`" :alt="language.icon">
               </div>
@@ -21,15 +22,16 @@
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <!--      Backend Development Card-->
-        <div class="col-span-1 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
+        <motion.div :in-view="{ y: [-15, -7.5, 0], opacity: [0, 0.5, 1.0] }"
+          class="col-span-1 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
           <div class="px-[22px] py-[25px] bg-darkCyan text-white">
             <h2>Backend Development</h2>
             <p>Building robust server side applications and APIs </p>
           </div>
           <div class="p-[35px] flex flex-col gap-[30px]">
-            <div v-for="language in backendLanguages" class="flex">
+            <div v-for="language in backendLanguages" class="flex hover:scale-105 transition-transform">
               <div class="dark:bg-[#374151] text-white bg-darkButton rounded-xl py-[10px] px-[10px]">
                 <img class="w-[24] mt-1 aspect-square" :src="`/${language.icon}`" :alt="language.icon">
               </div>
@@ -39,15 +41,16 @@
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <!--      TechStack Tools Card-->
-        <div class="col-span-1 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
+        <motion.div :in-view="{ x: [15, 7.5, 0], y: [-15, -7.5, 0], opacity: [0, 0.5, 1.0] }"
+          class="col-span-1 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden">
           <div class="px-[22px] py-[25px] bg-darkCyan text-white">
-            <h2>Backend Development</h2>
+            <h2>Techtools Development</h2>
             <p>Building robust server side applications and APIs </p>
           </div>
           <div class="p-[35px] flex flex-col gap-[30px]">
-            <div v-for="language in backendLanguages" class="flex">
+            <div v-for="language in backendLanguages" class="flex hover:scale-105 transition-transform">
               <div class="dark:bg-[#374151] text-white bg-darkButton rounded-xl py-[10px] px-[10px]">
                 <img class="w-[24] mt-1 aspect-square" :src="`/${language.icon}`" :alt="language.icon">
               </div>
@@ -57,17 +60,18 @@
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <!--      Development Philosophy-->
         <div
-            class="col-span-2 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden px-[22px] py-[25px] @max-md:col-span-1">
+          class="col-span-2 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden px-[22px] py-[25px] @max-md:col-span-1">
 
           <div class="flex flex-col justify-between gap-[30px]">
             <div class="flex flex-col gap-[30px]">
               <h1 class="text-[22px] font-semibold">Development Philosophy</h1>
               <p class="text-[12px] font-semibold">I believe in writing clean, maintainable code and staying current
                 with industry best practices.
-                <br>Always learning new technologies to deliver better solutions.</p>
+                <br>Always learning new technologies to deliver better solutions.
+              </p>
             </div>
             <div class="flex flex-wrap gap-4 @max-md:gap-1">
               <div class="py-[8px] px-[13px] dark:bg-[#374151] text-white bg-darkButton rounded-full">
@@ -91,7 +95,8 @@
 </template>
 
 <script setup lang="ts">
-import {reactive} from "vue";
+import { Motion, motion } from "motion-v";
+import { reactive } from "vue";
 
 const devLanguages = reactive([
   {

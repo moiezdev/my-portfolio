@@ -1,23 +1,25 @@
 <script setup lang="ts">
-
+import { Motion, motion } from "motion-v";
 </script>
 
 <template>
   <div class="py-[50px] @max-md:py-0 overflow-hidden w-full">
     <div
-        class="grid grid-cols-2 gap-x-4 px-26 h-full w-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-5">
+      class="grid grid-cols-2 gap-x-4 px-26 h-full w-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-5">
       <!--  right section-->
-      <div class="p-[100px] relative @max-md:px-[0px] @max-md:py-10">
+      <motion.div :in-view="{ x: [-30, -15, 0], opacity: [0.5, 0.75, 1.0] }"
+        class="p-[100px] relative @max-md:px-[0px] @max-md:py-10">
         <div class="relative w-full h-full">
           <span
-              class="dark:opacity-100 opacity-50 bg-[#203441] absolute w-[87px] aspect-square top-[-20px] right-[-80px] rounded-full"></span>
+            class="dark:opacity-100 opacity-50 bg-[#203441] absolute w-[87px] aspect-square top-[-20px] right-[-80px] rounded-full"></span>
           <span
-              class="dark:opacity-100 opacity-50 bg-[#203441] absolute w-[118px] aspect-square bottom-[-15px] left-[-85px] rounded-full"></span>
-          <img class="relative w-full h-full rounded-3xl object-cover z-10" src="/about.jpeg" alt="About.img"/>
+            class="dark:opacity-100 opacity-50 bg-[#203441] absolute w-[118px] aspect-square bottom-[-15px] left-[-85px] rounded-full"></span>
+          <img class="relative w-full h-full rounded-3xl object-cover z-10" src="/about.jpeg" alt="About.img" />
         </div>
-      </div>
+      </motion.div>
       <!--  left section-->
-      <div class="flex flex-col justify-between py-[80px] @max-md:pt-0 @max-md:pb-[50px]">
+      <motion.div :in-view="{ x: [30, 15, 0], opacity: [0.5, 0.75, 1.0] }"
+        class="flex flex-col justify-between py-[80px] @max-md:pt-0 @max-md:pb-[50px]">
         <div>
           <h1 class="text-[32px] font-bold">About Me</h1>
           <p class="text-[16px] my-[50px]">I’m Moiz ur Rehman, a JavaScript developer with expertise in front-end
@@ -47,10 +49,9 @@
             <p>Year Experience</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

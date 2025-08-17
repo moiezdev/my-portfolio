@@ -8,5 +8,4 @@ dist/
 # IDE files
 .vscode/
 .idea/
-.idea/workspace.xml
-/.idea
+package-lock.json
