@@ -62,8 +62,8 @@
           </div>
         </motion.div>
         <!--      Development Philosophy-->
-        <div
-          class="col-span-2 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden px-[22px] py-[25px] @max-md:col-span-1">
+        <motion.div :in-view="{ x: [15, 7.5, 0], y: [15, 7.5, 0], opacity: [0, 0.5, 1.0] }" class=" col-span-2 row-span-1 rounded-3xl dark:bg-dark-5 bg-darkMuted overflow-hidden px-[22px] py-[25px]
+          @max-md:col-span-1">
 
           <div class="flex flex-col justify-between gap-[30px]">
             <div class="flex flex-col gap-[30px]">
@@ -88,7 +88,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   </div>
