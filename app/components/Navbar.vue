@@ -67,11 +67,11 @@ const tabs = reactive([
     icon: "home",
     href: "/about"
   },
-  {
-    name: "Projects",
-    icon: "home",
-    href: "/projects"
-  },
+  // {
+  //   name: "Projects",
+  //   icon: "home",
+  //   href: "/projects"
+  // },
   {
     name: "Contact",
     icon: "home",

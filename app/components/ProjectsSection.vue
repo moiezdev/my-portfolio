@@ -34,7 +34,9 @@
         </div>
       </motion.div>
     </div>
-    <div v-if="type !== 'page'" class="flex justify-center">
+
+    <!-- Hidden "View All Projects" button on the projects page -->
+    <div v-if="type !== 'page'" class="justify-center hidden">
       <NuxtLink to="/projects" class="px-[25px] py-[15px] mt-[30px] rounded-full bg-darkCyan text-white font-display">
         View All Projects
       </NuxtLink>
