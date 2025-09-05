@@ -7,7 +7,7 @@ import { Motion, motion } from "motion-v";
     <div
       class="grid grid-cols-2 gap-x-4 px-26 h-full w-full dark:bg-dark-5 bg-darkMuted @max-md:grid-cols-1 @max-md:px-5">
       <!--  right section-->
-      <motion.div :in-view="{ x: [-30, -15, 0], opacity: [0.5, 0.75, 1.0] }"
+      <motion.div :in-view="{ x: [-30, -15, 0], opacity: [0.5, 0.75, 1.0] }" :intersection="{ threshold: 1.0 }"
         class="p-[100px] relative @max-md:px-[0px] @max-md:py-10">
         <div class="relative w-full h-full">
           <span
@@ -18,7 +18,7 @@ import { Motion, motion } from "motion-v";
         </div>
       </motion.div>
       <!--  left section-->
-      <motion.div :in-view="{ x: [30, 15, 0], opacity: [0.5, 0.75, 1.0] }"
+      <motion.div :in-view="{ x: [30, 15, 0], opacity: [0.5, 0.75, 1.0] }" :intersection="{ threshold: 1.0 }"
         class="flex flex-col justify-between py-[80px] @max-md:pt-0 @max-md:pb-[50px]">
         <div>
           <h1 class="text-[32px] font-bold">About Me</h1>

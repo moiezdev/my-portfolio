@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
+html,
+* {
+  scroll-behavior: smooth;
+}
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
-    --default-font-family: 'Inter', sans-serif;
-    --font-display: "Inter", sans-serif ;
-    --color-tahiti: #3ab7bf;
-    --color-bermuda: #78dcca;
-    --color-darkCyan: #2D9BAD;
-    --color-background: #ffffff;
-    --color-dark-1: #98A1AE;
-    --color-dark-5: #1F2937;
-    --color-button: #1F2937;
-    --color-darkButton: #1E4353;
-    --color-muted: #6b7280;
-    --color-accent: #007acc;
+  --default-font-family: 'Inter', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-darkCyan: #2d9bad;
+  --color-background: #ffffff;
+  --color-dark-1: #98a1ae;
+  --color-dark-5: #1f2937;
+  --color-button: #1f2937;
+  --color-darkButton: #1e4353;
+  --color-muted: #6b7280;
+  --color-accent: #007acc;
 
-    --color-darkBackground: #111827;
-    --color-text: #111827;
-    --color-darkText: #ffffff;
-    --color-darkMuted: #98A1AE;
-    --color-darkAccent: #00BFCF;
+  --color-darkBackground: #111827;
+  --color-text: #111827;
+  --color-darkText: #ffffff;
+  --color-darkMuted: #98a1ae;
+  --color-darkAccent: #00bfcf;
 
-    --color-card: #f3f4f6;
-    --color-darkCard: #161b22;
+  --color-card: #f3f4f6;
+  --color-darkCard: #161b22;
 }
